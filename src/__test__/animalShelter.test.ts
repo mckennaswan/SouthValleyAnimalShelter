@@ -18,10 +18,11 @@ test("meet the dogs", async () => {
     await shelter.click(shelter.dog);
     await driver.sleep(3000);
 });
-//test("Cinder", async () => {
-    //await driver.get("73180 Cinder");
-    //await driver.sleep(5000); 
-//});
+//to get test to pass need to comment this out. this test is a bug
+test("Cinder", async () => {
+    await driver.get("73180 Cinder");
+    await driver.sleep(5000); 
+});
 test("meet the cats", async () => {
     await shelter.click(shelter.adoptTab);
     await shelter.click(shelter.cat);
